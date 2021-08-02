@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário do Linha de Código</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+<body>
+<div class="d-flex justify-content-center ">
+        <div class="form-horizontal border p-5">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Horas trabalhadas</legend>
+        
+        <!-- Text input-->
+        <div class="control-group p-2">
+            <label class="control-label">Entrada</label>
+            <div class="controls">
+                <input id="entrada" entrada="entrada" type="time" placeholder="Entrada (hh:mm)" class="input-xlarge" required>
+            </div>
+        </div>
+
+        <div class="control-group p-2">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="almoco">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Fez Almoço</label>
+          </div>
+        </div>
+        <!-- Tex
+            t input-->
+        <div class="control-group p-2">
+            <label class="control-label">Sáida</label>
+            <div class="controls">
+                <input id="saida" entrada="saida" type="time" placeholder="Sáida (hh:mm)" class="input-xlarge" required>
+            </div>
+        </div>
+      
+        <!-- Button -->
+        <div class="control-group p-2">
+        <label class="control-label"></label>
+        <div class="controls">
+            <button id="enviar" name="enviar" class="btn btn-primary" onclick="teste()">Enviar</button>
+        </div>
+        </div>
+        
+        </fieldset>
+        </div>
+       
+</div>
+<div class="d-flex justify-content-center" id="result">
+    
+</div>
+</body>
+</html>
